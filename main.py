@@ -1,6 +1,7 @@
 
 from document import Document
 from index import index_document, index
+from search import and_search
 
 
 doc_1 = Document(doc_id=1, text="This is the first document.")
@@ -12,3 +13,5 @@ index_document(doc_2)
 index_document(doc_3)
 
 print(index)
+print(and_search("document second"))
+print(and_search("document python"))
